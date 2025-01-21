@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+.raleway-font{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* universal some silection of style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  :root{
+    --primary-color:#fea301;
+    --secondary-color:rgb(1, 172, 253);
+    --light-secondary-color:rgb(5, 212, 223);
+    --deep-blue-color:rgb(93, 88, 239);
+    --green-color:rgb(149, 178, 38);
+    --black-color:rgb(17, 17, 17);
+    --deep-black:rgb(0, 0, 0);
+    --h1-font-size:3rem;
+    --h2-font-size:2.5rem;
+    --h3-font-size:1.5rem;
+  }
+  h1{
+    font-size:3rem ;
+    line-height: 3.8rem;
+  }
+  h2{
+    font-size:2.5rem;
+    line-height: 3.5rem;
+  }
+  h3{
+    font-size:1.5rem ;
+    line-height: 2rem;
+  }
+
+  .display{
+    display: flex;
+  }
+  .hide{
+    display: none;
+  }
+
+  /* navigation style */
+#nav{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#nav .web_navigation--container{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+#nav .web_navigation--container .nav_logo{
+    
+    justify-content: center;
+    align-items: center;
+    gap: 0.87rem;
+}
+
+#nav .web_navigation--container .nav_link ul{
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+}
+#nav .web_navigation--container .nav_link ul li{
+    list-style: none;
+}
+#nav .web_navigation--container .nav_link ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.nav_btn .primary-btn{
+    padding: 0.87rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    color: #ffff;
+    border-radius: 0.5rem;
+    background-color:var(--primary-color);
+}
+
+.item-1{
+    color:var(--primary-color);
+}
+.item-2{
+    color: var(--secondary-color);
+}
+
+.item-3{
+    color: var(--light-secondary-color);
+}
+.item-4{
+    color: var(--deep-blue-color);
+}
+
+/* mobile-responsive  */
