@@ -24,6 +24,11 @@
     box-sizing: border-box;
 }
 
+/* body{
+    width: 100vw;
+    height: 200vh;
+} */
+
   :root{
     --primary-color:#fea301;
     --secondary-color:rgb(1, 172, 253);
@@ -63,12 +68,16 @@
 
   /* navigation style */
 #nav{
-    width: 70vw;
+    width: 100vw;
     margin: 0 auto;
+    background-color:#f7f7f7;
+
 }
 
 #nav .web_navigation--container{
-    margin-top: 2rem;
+    width: 80vw;
+    margin:0 auto;
+   
     justify-content: space-between;
     align-items: center;
 }
@@ -117,11 +126,12 @@
 
 /* Hero-section */
 #hero-section{
-    width: 70vw;
+    width: 100vw;
     margin: 0 auto;
+    background:#f7f7f7;
 }
 #hero-section .hero_section--container{
-    width: 100%;
+    width: 80vw;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -164,19 +174,25 @@ width: 35%;
 /* standard-curriculumn section */
 #standard-curriculumn{
     width:100vw;
-    height: fit-content;
-    margin: 2rem  auto 0 auto;
+    height: 80vh;
+    margin:0  auto;
     text-align: center;
+    background-color:#f7f7f7;
     background-image: url("/assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position:top right;
+    
+    
 }
 #standard-curriculumn .card-container{
-    width: 70vw;
-    margin: 1rem  auto 10rem auto;
+    width: 80vw;
+    height: 50%;
+    margin: 5rem auto 0 auto;
     display:grid;
     grid-template-columns: repeat(3 ,1fr);
+    background-color:#f7f7f7;
+    
    
 }
 
@@ -193,11 +209,13 @@ padding: 1rem;
 
 #standard-curriculumn .card-container .card .card-image-box{
     width: 100%;
+    height: 100%;
     padding:1.5rem;
 }
 
 #standard-curriculumn .card-container .card .card-content{
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -238,12 +256,142 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     color: var(--black-color);
 }
 
+
+
+#arrow{
+    width: 100vw;
+    height:60vh;
+    background:#f7f7f7;
+}
+
+.left-right-arrow{
+    width: 80vw;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color:transparent ;
+    
+}
+.left,
+.right{
+    background-color: var(--primary-color);
+    padding:20px;
+    border:none;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    
+}
+.left-right-arrow .right img{
+  height: 1.4rem;
+  width: 1.5rem;
+
+}
+.left-right-arrow .left img{
+    height: 1.4rem;
+    width: 1rem;
+}
+
+/* footer styling */
+#footer-section{
+    width: 100vw;
+    height: 60vh;
+    background-color: var(--secondary-color);
+    padding: 4rem;
+    margin-top: 2rem;
+ 
+}
+#footer-section .footer-container{
+    width: 80%;
+    height:40%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2rem;
+}
+#footer-section .footer-container .intro{
+    flex-direction: column;
+    max-width: 350px;
+}
+#footer-section .footer-container .intro p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+#footer-section .footer-container .logo{
+    width:45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-section .footer-container .logo img{
+    width: 120px;
+    height: 120px;
+    padding-right: 1rem;
+}
+#footer-section .footer-container .logo h3{
+    font-size:2.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 3rem;
+}
+
+#footer-section .footer-container .footer-link h3{
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+#footer-section .footer-container .footer-link ul{
+    flex-direction: column;
+
+    
+}
+#footer-section .footer-container .footer-link ul li{    list-style: none;
+    
+}
+#footer-section .footer-container .social-icon ul li{
+    list-style: none;
+}
+#footer-section .footer-container .social-icon h3{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#footer-section .footer-container .social-icon ul li img{
+  margin-right: 1rem;  
+}
+
+
+#footer-section .footer-container .footer-link ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+}
+
+
+
 /* mobile-responsive  */
 @media only screen and (max-width:600px){
     #nav{
         width:90vw;
         margin: 0 auto;
         border-bottom-width: 1px solid var(--primary-color);
+        background-color: transparent;
+        
+        
+        
     }
 
 
@@ -276,6 +424,8 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     #hero-section{
         width:90vw;
         margin: 0 auto;
+        background-color: transparent;
+
         
     }
     
@@ -316,19 +466,58 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 
 }
 /* standard-curriculumn responsive */
+#standard-curriculumn{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 40vh; */
+}
+
+#standard-curriculumn .standard-title{
+padding-top:2.5rem;
+font-size: 2rem;
+font-weight: bold;
+    
+}
 #standard-curriculumn .card-container{
     width: 80vw;
+    height: fit-content;
     display:grid;
     grid-template-columns: repeat(1 ,1fr);
+    gap: 2rem;
+    background-color: transparent;
    
 }
 #standard-curriculumn .card-container .card{
 max-width:100%;
-height:50%;
-margin-bottom: 1rem;
+min-height:100%;
+margin-bottom: 5rem;
+}
+#standard-curriculumn .card-container .card-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.left-right-arrow{
+    display: none;
 }
 
+/* Footer section container */
+#footer-section{
+    height: 100%;
+    margin: 0;
 }
+#footer-section .footer-container{
+min-height:100%;
+max-width: 100%;
+grid-template-columns:repeat(1 ,1fr);
+background-color: var(--secondary-color);
+padding:0 auto;
+justify-content: center;
+align-items: center;
+}
+
+
+}
+
 @media only screen and (min-width:601px) {
    nav hr{
         display: none;
