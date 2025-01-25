@@ -568,7 +568,7 @@ background-color: var(--secondary-color);
 
 
 /* mobile-responsive  */
-@media only screen and (max-width:576px){
+@media only screen and (max-width:600px){
     #nav{
         max-width: auto;
          padding: 0 1.2rem;
@@ -666,8 +666,7 @@ background-color: var(--secondary-color);
 }
 /* standard-curriculumn responsive */
 #standard-curriculumn{
-    max-width: auto ;
-    padding: 0 1.2rem;
+    max-width:100%;
     margin: 0 auto;
 
     /* margin-bottom: 40vh; */
