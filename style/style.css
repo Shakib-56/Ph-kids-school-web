@@ -354,7 +354,7 @@ marquee{
 }
 
 #stories-section .stories-container .big-card{
-    max-width:40vw;
+    max-width:35vw;
     border-radius: 2rem;
     padding-bottom: 2.5rem;
     display: flex;
@@ -366,10 +366,10 @@ marquee{
 }
 
 #stories-section .stories-container .big-card.big-card_img--box{
-    max-width:40vw;
+    max-width:35vw;
 }
 #stories-section .stories-container .big-card img{
-    max-width:40vw;
+    max-width:35vw;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     
@@ -406,7 +406,7 @@ button{
 
 
 #stories-section .stories-container .small-card-container{
-    max-width: 50vw;
+    max-width: 45vw;
     display: grid;
     grid-template-columns:repeat(2,1fr);
     justify-content: center;
